@@ -6,9 +6,14 @@
 
 ***INSTALL***
 
->> python -m venv venv
->> activate
->> pip install -r requirements.txt
+> python -m venv venv
+
+
+
+> activate
+
+
+> pip install -r requirements.txt
 
 **LAUNCH**
 
