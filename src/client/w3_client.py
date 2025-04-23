@@ -31,11 +31,14 @@ class EthClient:
                             "Content-Type": "application/json",
                             "User-Agent": user_agent,
                         },
+                        "timeout": 30,
                     },
                 )
             )
         else:
-            w3 = Web3(Web3.HTTPProvider(endpoint_uri=self.rpc))
+            w3 = Web3(
+                Web3.HTTPProvider(endpoint_uri=self.rpc, request_kwargs={"timeout": 30})
+            )
 
         return w3
 
