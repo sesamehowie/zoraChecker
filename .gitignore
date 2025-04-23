@@ -1,0 +1,7 @@
+/__pycache__
+.venv
+**/__pycache__
+data/proxies.txt
+data/results.csv
+data/wallets.txt
+*.cpython
